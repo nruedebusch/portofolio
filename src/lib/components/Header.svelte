@@ -1,8 +1,8 @@
 <script>
-  import IconClose from "./IconClose.svelte";
-  import IconMenu from "./IconMenu.svelte";
-  import WordMark from "./WordMark.svelte";
-  import ButtonLink from "./ButtonLink.svelte";
+  import IconClose from "$lib/components/IconClose.svelte";
+  import IconMenu from "$lib/components/IconMenu.svelte";
+  import WordMark from "$lib/components/WordMark.svelte";
+  import ButtonLink from "$lib/components/ButtonLink.svelte";
   import { page } from "$app/stores";
 
   let isOpen = false;
