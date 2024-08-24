@@ -16,7 +16,7 @@
         <p class="text-gray-300 mt-6">n.ruedebusch@web.de</p>
       </div>
       <div class="contact-img">
-        <img src="/assets/contact.webp" alt="contact" />
+        <img src="/assets/contact.webp" alt="contact" loading="lazy" />
       </div>
     </div>
   </div>

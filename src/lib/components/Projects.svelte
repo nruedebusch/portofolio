@@ -46,6 +46,9 @@
       alt="Showcase"
       class="opacity-90 rounded-md shadow-2xl lg:col-span-2 lg:pt-0 lg:-order-1 lg:translate-x-[-15%]"
       sizes="(max-width: 768px) 100vw, 50vw"
+      loading="lazy"
+      width="700"
+      height="394"
     />
   </div>
 
@@ -76,6 +79,9 @@
       alt="Showcase"
       class="opacity-90 rounded-md shadow-2xl lg:col-span-2 lg:pt-0 lg:order-1 lg:translate-x-[15%]"
       sizes="(max-width: 768px) 100vw, 50vw"
+      loading="lazy"
+      width="700"
+      height="394"
     />
   </div>
 
@@ -106,6 +112,9 @@
       alt="Showcase"
       class="opacity-90 rounded-md shadow-2xl lg:col-span-2 lg:pt-0 lg:-order-1 lg:translate-x-[-15%]"
       sizes="(max-width: 768px) 100vw, 50vw"
+      loading="lazy"
+      width="700"
+      height="394"
     />
   </div>
 </Bounded>

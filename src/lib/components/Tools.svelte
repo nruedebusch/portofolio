@@ -35,6 +35,7 @@
         class="w-8 h-8 mx-auto"
         width="32"
         height="32"
+        loading="lazy"
       />
       <p class="font-bold text-lg">SvelteKit</p>
     </div>
@@ -45,6 +46,7 @@
         class="w-8 h-8 mx-auto"
         width="32"
         height="32"
+        loading="lazy"
       />
       <p class="font-bold text-lg">Tailwind</p>
     </div>
@@ -55,6 +57,7 @@
         class="w-8 h-8 mx-auto"
         width="32"
         height="32"
+        loading="lazy"
       />
       <p class="font-bold text-lg">Firebase</p>
     </div>
@@ -65,6 +68,7 @@
         class="w-8 h-8 mx-auto"
         width="32"
         height="32"
+        loading="lazy"
       />
       <p class="font-bold text-lg">GSAP</p>
     </div>
@@ -75,6 +79,7 @@
         class="w-8 h-8 mx-auto"
         width="32"
         height="32"
+        loading="lazy"
       />
       <p class="font-bold text-lg">Three.js</p>
     </div>
@@ -85,6 +90,7 @@
         class="w-8 h-8 mx-auto"
         width="32"
         height="32"
+        loading="lazy"
       />
       <p class="font-bold text-lg">Prismic</p>
     </div>
