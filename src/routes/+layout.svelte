@@ -1,6 +1,10 @@
 <script>
   import "../app.css";
-  import "@fontsource-variable/dm-sans";
+  import { load } from "@fontsource-variable/dm-sans";
+
+  load({
+    display: "swap",
+  });
 </script>
 
 <svelte:head>
