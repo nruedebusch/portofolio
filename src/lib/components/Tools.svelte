@@ -29,27 +29,63 @@
     class="flex flex-wrap items-center justify-center mt-6 gap-x-10 gap-y-6 md:gap-x-16 [&_path]:fill-white"
   >
     <div class="flex items-center gap-1">
-      <img src="/assets/svelte.svg" alt="SvelteKit" class="w-8 h-8 mx-auto" />
+      <img
+        src="/assets/svelte.svg"
+        alt="SvelteKit"
+        class="w-8 h-8 mx-auto"
+        width="32"
+        height="32"
+      />
       <p class="font-bold text-lg">SvelteKit</p>
     </div>
     <div class="flex items-center gap-1">
-      <img src="/assets/tailwind.svg" alt="tailwind" class="w-8 h-8 mx-auto" />
+      <img
+        src="/assets/tailwind.svg"
+        alt="tailwind"
+        class="w-8 h-8 mx-auto"
+        width="32"
+        height="32"
+      />
       <p class="font-bold text-lg">Tailwind</p>
     </div>
     <div class="flex items-center gap-1">
-      <img src="/assets/firebase.svg" alt="Firebase" class="w-8 h-8 mx-auto" />
+      <img
+        src="/assets/firebase.svg"
+        alt="Firebase"
+        class="w-8 h-8 mx-auto"
+        width="32"
+        height="32"
+      />
       <p class="font-bold text-lg">Firebase</p>
     </div>
     <div class="flex items-center gap-1">
-      <img src="/assets/gsap.svg" alt="GSAP" class="w-8 h-8 mx-auto" />
+      <img
+        src="/assets/gsap.svg"
+        alt="GSAP"
+        class="w-8 h-8 mx-auto"
+        width="32"
+        height="32"
+      />
       <p class="font-bold text-lg">GSAP</p>
     </div>
     <div class="flex items-center gap-1">
-      <img src="/assets/Threejs.svg" alt="Three JS" class="w-8 h-8 mx-auto" />
+      <img
+        src="/assets/Threejs.svg"
+        alt="Three JS"
+        class="w-8 h-8 mx-auto"
+        width="32"
+        height="32"
+      />
       <p class="font-bold text-lg">Three.js</p>
     </div>
     <div class="flex items-center gap-1">
-      <img src="/assets/prismic.svg" alt="prismic" class="w-8 h-8 mx-auto" />
+      <img
+        src="/assets/prismic.svg"
+        alt="prismic"
+        class="w-8 h-8 mx-auto"
+        width="32"
+        height="32"
+      />
       <p class="font-bold text-lg">Prismic</p>
     </div>
   </div>
