@@ -34,6 +34,7 @@
         class="block p-2 text-3xl text-white md:hidden"
         aria-expanded={isOpen}
         on:click={toggleOpen}
+        aria-label="Open menu"
       >
         <IconMenu />
       </button>
@@ -48,6 +49,7 @@
         type="button"
         class="block p-2 text-3xl text-white md:hidden"
         on:click={toggleOpen}
+        aria-label="Close menu"
       >
         <IconClose />
       </button>
