@@ -1,33 +1,34 @@
 <script>
-  import { onMount, onDestroy } from "svelte";
-  import { browser } from "$app/environment";
+  import { onMount } from "svelte";
 
   export let className = "";
   export let quantity = 700;
   export let staticity = 50;
   export let ease = 50;
   export let size = 0.4;
-  export let refresh = false;
+  export const refresh = true;
   export let color = "#2955a5";
   export let vx = 0;
   export let vy = 0;
 
-  let canvasElement;
-  let canvasContainer;
+  let canvasRef;
+  let canvasContainerRef;
   let context = null;
   let circles = [];
   let mouse = { x: 0, y: 0 };
   let canvasSize = { w: 0, h: 0 };
-  let dpr = 1;
+  const dpr = typeof window !== "undefined" ? window.devicePixelRatio : 1;
 
   function hexToRgb(hex) {
     hex = hex.replace("#", "");
+
     if (hex.length === 3) {
       hex = hex
         .split("")
         .map((char) => char + char)
         .join("");
     }
+
     const hexInt = parseInt(hex, 16);
     const red = (hexInt >> 16) & 255;
     const green = (hexInt >> 8) & 255;
@@ -35,36 +36,7 @@
     return [red, green, blue];
   }
 
-  function initCanvas() {
-    if (!browser) return;
-    resizeCanvas();
-    drawParticles();
-  }
-
-  function onMouseMove(event) {
-    if (!browser || !canvasElement) return;
-    const rect = canvasElement.getBoundingClientRect();
-    const { w, h } = canvasSize;
-    const x = event.clientX - rect.left - w / 2;
-    const y = event.clientY - rect.top - h / 2;
-    const inside = x < w / 2 && x > -w / 2 && y < h / 2 && y > -h / 2;
-    if (inside) {
-      mouse.x = x;
-      mouse.y = y;
-    }
-  }
-
-  function resizeCanvas() {
-    if (!browser || !canvasContainer || !canvasElement || !context) return;
-    circles = [];
-    canvasSize.w = canvasContainer.offsetWidth;
-    canvasSize.h = canvasContainer.offsetHeight;
-    canvasElement.width = canvasSize.w * dpr;
-    canvasElement.height = canvasSize.h * dpr;
-    canvasElement.style.width = `${canvasSize.w}px`;
-    canvasElement.style.height = `${canvasSize.h}px`;
-    context.scale(dpr, dpr);
-  }
+  const rgb = hexToRgb(color);
 
   function circleParams() {
     const x = Math.floor(Math.random() * canvasSize.w);
@@ -91,20 +63,16 @@
     };
   }
 
-  const rgb = hexToRgb(color);
-
-  function drawCircle(circle, update = false) {
-    if (!context) return;
-    const { x, y, translateX, translateY, size, alpha } = circle;
-    context.translate(translateX, translateY);
-    context.beginPath();
-    context.arc(x, y, size, 0, 2 * Math.PI);
-    context.fillStyle = `rgba(${rgb.join(", ")}, ${alpha})`;
-    context.fill();
-    context.setTransform(dpr, 0, 0, dpr, 0, 0);
-
-    if (!update) {
-      circles.push(circle);
+  function resizeCanvas() {
+    if (canvasContainerRef && canvasRef && context) {
+      circles.length = 0;
+      canvasSize.w = canvasContainerRef.offsetWidth;
+      canvasSize.h = canvasContainerRef.offsetHeight;
+      canvasRef.width = canvasSize.w * dpr;
+      canvasRef.height = canvasSize.h * dpr;
+      canvasRef.style.width = `${canvasSize.w}px`;
+      canvasRef.style.height = `${canvasSize.h}px`;
+      context.scale(dpr, dpr);
     }
   }
 
@@ -114,23 +82,37 @@
     }
   }
 
+  function drawCircle(circle, update = false) {
+    if (context) {
+      const { x, y, translateX, translateY, size, alpha } = circle;
+      context.translate(translateX, translateY);
+      context.beginPath();
+      context.arc(x, y, size, 0, 2 * Math.PI);
+      context.fillStyle = `rgba(${rgb.join(", ")}, ${alpha})`;
+      context.fill();
+      context.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+      if (!update) {
+        circles.push(circle);
+      }
+    }
+  }
+
   function drawParticles() {
     clearContext();
-    const particleCount = quantity;
-    for (let i = 0; i < particleCount; i++) {
+    for (let i = 0; i < quantity; i++) {
       const circle = circleParams();
       drawCircle(circle);
     }
   }
 
   function remapValue(value, start1, end1, start2, end2) {
-    const remapped =
+    let remapped =
       ((value - start1) * (end2 - start2)) / (end1 - start1) + start2;
     return remapped > 0 ? remapped : 0;
   }
 
   function animate() {
-    if (!browser) return;
     clearContext();
     circles.forEach((circle, i) => {
       const edge = [
@@ -171,34 +153,52 @@
         drawCircle(newCircle);
       }
     });
-    requestAnimationFrame(animate);
+    window.requestAnimationFrame(animate);
+  }
+
+  function onMouseMove(event) {
+    if (canvasRef) {
+      let rect = canvasRef.getBoundingClientRect();
+      let { w, h } = canvasSize;
+      let x = event.clientX - rect.left - w / 2;
+      let y = event.clientY - rect.top - h / 2;
+      let inside = x < w / 2 && x > -w / 2 && y < h / 2 && y > -h / 2;
+      if (inside) {
+        mouse.x = x;
+        mouse.y = y;
+      }
+    }
   }
 
   onMount(() => {
-    if (browser) {
-      dpr = window.devicePixelRatio;
-      context = canvasElement.getContext("2d");
-      initCanvas();
+    if (canvasRef) {
+      context = canvasRef.getContext("2d");
+      resizeCanvas();
       animate();
-      window.addEventListener("resize", initCanvas);
+      window.addEventListener("resize", resizeCanvas);
       window.addEventListener("mousemove", onMouseMove);
     }
-  });
 
-  onDestroy(() => {
-    if (browser) {
-      window.removeEventListener("resize", initCanvas);
+    return () => {
+      window.removeEventListener("resize", resizeCanvas);
       window.removeEventListener("mousemove", onMouseMove);
-    }
+    };
   });
 
-  $: if (refresh && browser) {
-    initCanvas();
+  $: {
+    if (canvasRef) {
+      drawParticles();
+    }
   }
 </script>
 
-{#if browser}
-  <div class={className} bind:this={canvasContainer} aria-hidden="true">
-    <canvas bind:this={canvasElement} class="size-full" />
-  </div>
-{/if}
+<div class={className} bind:this={canvasContainerRef} aria-hidden="true">
+  <canvas bind:this={canvasRef} class="size-full"></canvas>
+</div>
+
+<style>
+  .size-full {
+    width: 100%;
+    height: 100%;
+  }
+</style>

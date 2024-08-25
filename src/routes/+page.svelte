@@ -8,7 +8,6 @@
 
 <Header />
 <Hero />
-
-<Projects />
 <Tools />
+<Projects />
 <Contact />
