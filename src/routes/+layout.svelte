@@ -17,6 +17,7 @@
     href={dmSansWoff2}
     crossorigin="anonymous"
   />
+  <link rel="preload" as="image" href="/assets/hero.webp" type="image/webp" />
 </svelte:head>
 
 <slot />
