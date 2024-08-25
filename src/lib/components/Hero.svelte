@@ -17,7 +17,12 @@
       on honesty, reliability, and a genuine commitment to our success.
     </p>
 
-    <ButtonLink text="Contact me" className="mt-6" href="/#contact" />
+    <ButtonLink
+      text="Contact me"
+      className="mt-6"
+      href="/#contact"
+      target="_self"
+    />
 
     <div class="md:-mt-40 md:-mb-16 w-fit">
       <img src="assets/hero.webp" alt="Description" class="" />
