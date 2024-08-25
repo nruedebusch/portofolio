@@ -32,8 +32,13 @@
 
 body {
   font-family: "DM Sans", sans-serif;
-  background-image: url("/assets/noise-texture.svg");
   @apply grid bg-gray-950 bg-repeat text-gray-50;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("/assets/noise-texture.svg");
+  }
 }
 
 html {
