@@ -45,7 +45,6 @@
       src="assets/smartcart.webp"
       alt="Showcase"
       class="opacity-90 rounded-md shadow-2xl lg:col-span-2 lg:pt-0 lg:-order-1 lg:translate-x-[-15%]"
-      sizes="(max-width: 768px) 100vw, 50vw"
       loading="lazy"
     />
   </div>
@@ -76,7 +75,6 @@
       src="assets/cinem8.webp"
       alt="Showcase"
       class="opacity-90 rounded-md shadow-2xl lg:col-span-2 lg:pt-0 lg:order-1 lg:translate-x-[15%]"
-      sizes="(max-width: 768px) 100vw, 50vw"
       loading="lazy"
     />
   </div>
@@ -107,7 +105,6 @@
       src="assets/ringw3rk.webp"
       alt="Showcase"
       class="opacity-90 rounded-md shadow-2xl lg:col-span-2 lg:pt-0 lg:-order-1 lg:translate-x-[-15%]"
-      sizes="(max-width: 768px) 100vw, 50vw"
       loading="lazy"
     />
   </div>
