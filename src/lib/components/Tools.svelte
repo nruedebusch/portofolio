@@ -22,7 +22,7 @@
     </p>
   </div>
 
-  <h3 class="text-center text-sm font-semibold mt-16 uppercase text-gray-600">
+  <h3 class="text-center text-sm font-semibold mt-16 uppercase text-gray-400">
     Tools I like to use
   </h3>
   <div

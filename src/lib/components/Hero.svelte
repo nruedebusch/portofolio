@@ -25,7 +25,13 @@
     />
 
     <div class="md:-mt-40 md:-mb-16 w-fit">
-      <img src="assets/hero.webp" alt="Description" class="" />
+      <img
+        src="assets/hero.webp"
+        alt="Description"
+        class=""
+        width="1116"
+        height="808"
+      />
     </div>
   </div>
 </Bounded>
