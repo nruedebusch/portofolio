@@ -10,11 +10,12 @@
       frontends with knowledge and passion.
     </h3>
     <p class="text-gray-300 mt-6 md:mt-0 md:col-span-2 max-w-[65ch]">
-      With over a year of professional experience, I create meaningful and
+      With nearly two years of professional experience, I create meaningful and
       impactful web products. My solid knowledge of HTML, CSS, and JavaScript,
-      combined with my experience using frameworks like Tailwind and SvelteKit,
-      enables me to develop high-performance, user-friendly, and accessible
-      interfaces that comply with web standards and best practices. <br />
+      combined with my experience using frameworks like Next.js and component
+      libraries like Chakra UI, enables me to develop high-performance,
+      user-friendly, and accessible interfaces that comply with web standards
+      and best practices. <br />
       <br />
       My goal is to develop websites that are visually appealing, accessible, and
       optimized for both users and search engines, ensuring a positive experience
@@ -28,40 +29,40 @@
   <div
     class="flex flex-wrap items-center justify-center mt-6 gap-x-10 gap-y-6 md:gap-x-16 [&_path]:fill-white"
   >
-    <div class="flex items-center gap-1">
+    <div class="flex items-center gap-2">
       <img
-        src="/assets/svelte.svg"
-        alt="SvelteKit"
+        src="/assets/nextjs.svg"
+        alt="Next.js"
         class="w-8 h-8 mx-auto"
         width="32"
         height="32"
         loading="lazy"
       />
-      <p class="font-bold text-lg">SvelteKit</p>
+      <p class="font-bold text-lg">Next.js</p>
     </div>
-    <div class="flex items-center gap-1">
+    <div class="flex items-center gap-2">
       <img
-        src="/assets/tailwind.svg"
-        alt="tailwind"
+        src="/assets/chakra.svg"
+        alt="chakra"
         class="w-8 h-8 mx-auto"
         width="32"
         height="32"
         loading="lazy"
       />
-      <p class="font-bold text-lg">Tailwind</p>
+      <p class="font-bold text-lg">Chakra Ui</p>
     </div>
-    <div class="flex items-center gap-1">
+    <div class="flex items-center gap-2">
       <img
-        src="/assets/firebase.svg"
-        alt="Firebase"
+        src="/assets/supabase.webp"
+        alt="Supabase"
         class="w-8 h-8 mx-auto"
         width="32"
         height="32"
         loading="lazy"
       />
-      <p class="font-bold text-lg">Firebase</p>
+      <p class="font-bold text-lg">Supabase</p>
     </div>
-    <div class="flex items-center gap-1">
+    <div class="flex items-center gap-2">
       <img
         src="/assets/gsap.svg"
         alt="GSAP"
@@ -72,7 +73,7 @@
       />
       <p class="font-bold text-lg">GSAP</p>
     </div>
-    <div class="flex items-center gap-1">
+    <div class="flex items-center gap-2">
       <img
         src="/assets/Threejs.svg"
         alt="Three JS"
@@ -83,7 +84,7 @@
       />
       <p class="font-bold text-lg">Three.js</p>
     </div>
-    <div class="flex items-center gap-1">
+    <div class="flex items-center gap-2">
       <img
         src="/assets/prismic.svg"
         alt="prismic"

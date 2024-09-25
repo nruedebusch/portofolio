@@ -28,9 +28,9 @@
       <h3 class="mt-6 text-2xl font-normal">Smartcart</h3>
 
       <div class="prose prose-invert mt-4 max-w-xl text-gray-300">
-        A shopping list app built with SvelteKit, Tailwind and Firebase
-        Authentication and Database. It allows users to create an account, log
-        in, and manage their personal shopping list.
+        A shopping list app built with Next.js, Chakra UI, React Hook Form, Zod
+        and Firebase Authentication and Database. It allows users to create an
+        account, log in, and manage their personal shopping list.
       </div>
 
       <ButtonLink
@@ -42,7 +42,7 @@
     </div>
 
     <img
-      src="assets/smartcart.webp"
+      src="assets/smartcart1.webp"
       alt="Showcase"
       class="opacity-90 rounded-md shadow-2xl lg:col-span-2 lg:pt-0 lg:-order-1 lg:translate-x-[-15%]"
       loading="lazy"
@@ -55,12 +55,12 @@
     <div class="grid-background" />
 
     <div>
-      <h3 class="mt-6 text-2xl font-normal">Cinemate</h3>
+      <h3 class="mt-6 text-2xl font-normal">Hidden Gems</h3>
 
       <div class="prose prose-invert mt-4 max-w-xl text-gray-300">
-        CineMate is a user-friendly web application built with SvelteKit,
-        Tailwind CSS, and The Movie Database API. It allows users to search for
-        movies and discover new ones.
+        Hidden Gems is a user-friendly web application built with Next.js,
+        shadcn/ui, Tailwind CSS, Leaflet and a PostgreSQL database hosted with
+        Supabase. It allows users to discover popular places in Berlin.
       </div>
 
       <ButtonLink
@@ -72,7 +72,7 @@
     </div>
 
     <img
-      src="assets/cinem8.webp"
+      src="assets/hiddengems.webp"
       alt="Showcase"
       class="opacity-90 rounded-md shadow-2xl lg:col-span-2 lg:pt-0 lg:order-1 lg:translate-x-[15%]"
       loading="lazy"
