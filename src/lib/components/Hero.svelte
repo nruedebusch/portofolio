@@ -13,8 +13,8 @@
     </h1>
 
     <p class="mx-auto mt-6 max-w-md text-gray-300">
-      I believe in building more than just websites; I build relationships based
-      on honesty, reliability, and a genuine commitment to our success.
+      I am passionate about building functional web applications because I enjoy
+      combining creativity and technology.
     </p>
 
     <ButtonLink

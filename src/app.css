@@ -45,6 +45,10 @@ html {
   scroll-behavior: smooth;
 }
 
+p {
+  text-wrap: pretty;
+}
+
 .glass-container {
   position: relative;
 }

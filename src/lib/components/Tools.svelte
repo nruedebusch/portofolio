@@ -7,7 +7,7 @@
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
     <h3 class="text-2xl font-normal text-right md:col-span-1">
       Hello, I'm Niklas, webdeveloper based in Münster – I create digital
-      frontends with knowledge and passion.
+      projects with knowledge and passion.
     </h3>
     <p class="text-gray-300 mt-6 md:mt-0 md:col-span-2 max-w-[65ch]">
       With nearly two years of professional experience, I create meaningful and
@@ -17,7 +17,7 @@
       user-friendly, and accessible interfaces that comply with web standards
       and best practices. <br />
       <br />
-      My goal is to develop websites that are visually appealing, accessible, and
+      My goal is to develop webapps that are visually appealing, accessible, and
       optimized for both users and search engines, ensuring a positive experience
       and high visibility on the web.
     </p>
@@ -64,14 +64,25 @@
     </div>
     <div class="flex items-center gap-2">
       <img
-        src="/assets/gsap.svg"
-        alt="GSAP"
+        src="/assets/prisma.svg"
+        alt="prisma"
         class="w-8 h-8 mx-auto"
         width="32"
         height="32"
         loading="lazy"
       />
-      <p class="font-bold text-lg">GSAP</p>
+      <p class="font-bold text-lg">Prisma</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <img
+        src="/assets/framer-motion.svg"
+        alt="framer-motion"
+        class="w-8 h-8 mx-auto"
+        width="32"
+        height="32"
+        loading="lazy"
+      />
+      <p class="font-bold text-lg">Framer Motion</p>
     </div>
     <div class="flex items-center gap-2">
       <img
@@ -83,17 +94,6 @@
         loading="lazy"
       />
       <p class="font-bold text-lg">Three.js</p>
-    </div>
-    <div class="flex items-center gap-2">
-      <img
-        src="/assets/prismic.svg"
-        alt="prismic"
-        class="w-8 h-8 mx-auto"
-        width="32"
-        height="32"
-        loading="lazy"
-      />
-      <p class="font-bold text-lg">Prismic</p>
     </div>
   </div>
 </Bounded>
