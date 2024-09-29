@@ -66,7 +66,7 @@
       <ButtonLink
         text="View Project"
         className="mt-6"
-        href="https://plantpal.netlify.app"
+        href="https://veganplantpal.netlify.app"
         target="_blank"
       />
     </div>
@@ -96,7 +96,7 @@
       <ButtonLink
         text="View Project"
         className="mt-6"
-        href="https://hiddengems.netlify.app"
+        href="https://hiddengemsberlin.netlify.app"
         target="_blank"
       />
     </div>
