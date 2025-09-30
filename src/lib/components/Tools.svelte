@@ -10,12 +10,8 @@
       projects with knowledge and passion.
     </h3>
     <p class="text-gray-300 mt-6 md:mt-0 md:col-span-2 max-w-[65ch]">
-      With nearly two years of professional experience, I create meaningful and
-      impactful web products. My solid knowledge of HTML, CSS, and JavaScript,
-      combined with my experience using frameworks like Next.js and component
-      libraries like Chakra UI, enables me to develop high-performance,
-      user-friendly, and accessible interfaces that comply with web standards
-      and best practices. <br />
+      With nearly three years of professional experience, I create meaningful and
+      impactful web products. With strong frontend expertise in TypeScript and Next.js, paired with production‑ready backend experience using PostgreSQL, Prisma, and well‑structured APIs, I build performant, accessible interfaces and robust services that are scalable, maintainable, and aligned with best practices.. <br />
       <br />
       My goal is to develop webapps that are visually appealing, accessible, and
       optimized for both users and search engines, ensuring a positive experience
