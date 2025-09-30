@@ -12,7 +12,7 @@
       <span>wholeheartedly.</span>
     </h1>
 
-    <p class="mx-auto mt-6 max-w-md text-gray-300">
+    <p class="mx-auto mt-6 max-w-lg text-gray-300">
       I build functional web applications that turn ideas into reliable, user‑friendly experiences by blending creativity with technology.
     </p>
 
