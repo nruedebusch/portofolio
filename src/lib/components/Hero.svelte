@@ -13,8 +13,7 @@
     </h1>
 
     <p class="mx-auto mt-6 max-w-md text-gray-300">
-      I am passionate about building functional web applications because I enjoy
-      combining creativity and technology.
+      I build functional web applications that turn ideas into reliable, user‑friendly experiences by blending creativity with technology.
     </p>
 
     <ButtonLink
