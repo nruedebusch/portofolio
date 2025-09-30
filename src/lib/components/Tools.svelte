@@ -6,7 +6,7 @@
   <h2 class="text-center text-5xl font-medium md:text-7xl">About me</h2>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
     <h3 class="text-2xl font-normal text-right md:col-span-1">
-      Hello, I'm Niklas, webdeveloper based in Münster – I create digital
+      Hello, I'm Niklas, webdeveloper based in Bremen – I create digital
       projects with knowledge and passion.
     </h3>
     <p class="text-gray-300 mt-6 md:mt-0 md:col-span-2 max-w-[65ch]">
