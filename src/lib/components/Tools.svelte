@@ -11,7 +11,7 @@
     </h3>
     <p class="text-gray-300 mt-6 md:mt-0 md:col-span-2 max-w-[65ch]">
       With nearly three years of professional experience, I create meaningful and
-      impactful web products. With strong frontend expertise in TypeScript and Next.js, paired with production‑ready backend experience using PostgreSQL, Prisma, and well‑structured APIs, I build performant, accessible interfaces and robust services that are scalable, maintainable, and aligned with best practices.. <br />
+      impactful web products. Leveraging solid frontend knowledge in TypeScript and Next.js alongside backend proficiency with PostgreSQL and Prisma, solutions are built high-performing, user-friendly, and accessible that comply with web standards and best practices. <br />
       <br />
       My goal is to develop webapps that are visually appealing, accessible, and
       optimized for both users and search engines, ensuring a positive experience
