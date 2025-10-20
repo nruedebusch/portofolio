@@ -40,11 +40,6 @@ body {
     background-image: url("/assets/noise-texture.svg");
   }
   
-  @supports (-moz-appearance: none) {
-    body {
-      background-image: none;
-    }
-  }
 }
 
 html {
