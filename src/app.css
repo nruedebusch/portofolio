@@ -4,28 +4,28 @@
 
 @font-face {
   font-family: "DM Sans";
-  src: url("/fonts/DMSANS-Regular.woff2") format("woff2");
+  src: url("/fonts/DMSans-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "DM Sans";
-  src: url("/fonts/DMSANS-Bold.woff2") format("woff2");
+  src: url("/fonts/DMSans-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "DM Sans";
-  src: url("/fonts/DMSANS-Italic.woff2") format("woff2");
+  src: url("/fonts/DMSans-Italic.woff2") format("woff2");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "DM Sans";
-  src: url("/fonts/DMSANS-Medium.woff2") format("woff2");
+  src: url("/fonts/DMSans-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
