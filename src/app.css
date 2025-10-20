@@ -41,6 +41,12 @@ body {
   }
 }
 
+@supports (-moz-appearance: none) {
+    body {
+        background-image: none;
+    }
+}
+
 html {
   scroll-behavior: smooth;
 }
